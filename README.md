@@ -1,17 +1,22 @@
 # RFM Analysis for Customer Segmentation
 
-## Overview
+## 🚀 Overview
+
 This Python project performs RFM (Recency, Frequency, Monetary) analysis to segment customers based on their purchasing behavior. By analyzing transactional data, the project identifies high-value customers and provides insights for targeted marketing strategies.
 
-**GoogleColab Project Link**: [E-commerce RFM Analysis Project](https://colab.research.google.com/drive/19noOLRIen7Mr_aUk0hpacfkRh1CJuflM#scrollTo=c6F6nMjNU5XY)
+**Google Colab Project Link**: [E-commerce RFM Analysis Project](https://colab.research.google.com/drive/19noOLRIen7Mr_aUk0hpacfkRh1CJuflM#scrollTo=c6F6nMjNU5XY)
 
-## Key Features
-1. **Data Cleaning**: Handles missing values, incorrect data types, and irrelevant or incorrect data entries.
-   - Dropped rows with missing `CustomerID` (135,080 rows).
-   - Retained rows with missing `Description` as they do not affect the RFM analysis.
-   - Corrected `CustomerID` and `InvoiceNo` data types (from float to int).
-   - Removed canceled orders (8905 rows with negative quantities or starting with "C").
-   - Retained rows with 0 `UnitPrice` as they do not significantly skew the analysis.
+---
+
+## 🔄 Key Features
+
+1. **Data Cleaning**:
+   - Handled missing values, incorrect data types, and irrelevant or incorrect data entries.
+     - Dropped rows with missing `CustomerID` (135,080 rows).
+     - Retained rows with missing `Description` as they do not affect the RFM analysis.
+     - Corrected `CustomerID` and `InvoiceNo` data types (from float to int).
+     - Removed canceled orders (8,905 rows with negative quantities or starting with "C").
+     - Retained rows with 0 `UnitPrice` as they do not significantly skew the analysis.
 
 2. **RFM Calculation**:
    - **Recency**: Days since the customer's last purchase.
@@ -25,19 +30,44 @@ This Python project performs RFM (Recency, Frequency, Monetary) analysis to segm
 4. **Visualization**:
    - Includes charts and graphs to visually interpret customer segments.
 
-## Dataset
-The dataset used is a transactional dataset from an e-commerce retail store. The data includes:
-- `InvoiceNo`: Unique invoice number for each transaction.
-- `CustomerID`: Unique identifier for customers.
-- `Quantity`: Number of units purchased.
-- `UnitPrice`: Price per unit.
-- `InvoiceDate`: Date of the transaction.
+---
 
-## Insights Gained
+## 📊 Dataset
+
+The dataset used is a transactional dataset from an e-commerce retail store. The data includes:
+
+| **Feature**       | **Description**                                                    |
+|--------------------|--------------------------------------------------------------------|
+| `InvoiceNo`       | Unique invoice number for each transaction.                       |
+| `CustomerID`      | Unique identifier for customers.                                  |
+| `Quantity`        | Number of units purchased.                                        |
+| `UnitPrice`       | Price per unit.                                                   |
+| `InvoiceDate`     | Date of the transaction.                                          |
+
+---
+
+## 🕵️ Insights Gained
+
 - Identification of the most valuable customers based on purchasing behavior.
 - Segmentation of customers into actionable groups for targeted marketing.
 - Insights into purchasing trends and customer loyalty.
 
-## Conclusion
+---
+
+## 📈 Conclusion
+
 This project showcases the power of Python in customer segmentation through RFM analysis. By leveraging transactional data, businesses can make informed decisions to improve customer retention and maximize revenue.
 
+---
+
+## 📜 License
+
+This project is for educational purposes only.
+
+---
+
+## 👩‍💻 Author
+
+**Sapphie Nguyen**
+
+---
